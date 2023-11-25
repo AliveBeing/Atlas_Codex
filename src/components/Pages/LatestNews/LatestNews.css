@@ -1,0 +1,133 @@
+.art {
+    display: block;
+    margin-left: 10%;
+    
+  }
+  .late {
+    scroll-margin-top: 5%;
+  
+  }
+  .data {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    margin-left: 16%;
+    margin-right: -10px;
+    margin-top: 20px;
+    max-width: 630px;
+    padding: 12px;
+  }
+  .i_image {
+    position: relative;
+    height: 190px;
+    width: 190px;
+    object-fit: contain;
+  }
+  .i_link {
+    border-radius: 1rem;
+    display: flex;
+    opacity: 1;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+  
+  }
+  
+  .i_text {
+    flex: 4;
+  }
+  .EntryTitle {
+    color: #333;
+    cursor: pointer;
+    font-weight: 700;
+    display: ini_line-block;
+    font-size: 16px;
+    letter-spacing: -0.04em;
+    line-height: 1.25em;
+    margin-bottom: .25rem;
+    width: 80%;
+    word-break: break-word;
+  }
+  .EntryMetadata {
+    color: #9e9e9e;
+    font-size: 13px;
+    line-height: 18px;
+    overflow: visible;
+  }
+  .EntryMetadataBasic__source-info {
+    direction: ltr;
+    display: ini_line-block;
+  }
+  .EntryEngagement {
+    color: #9e9e9e;
+    margin-right: .5rem;
+  }
+  .EntrySummary {
+    color: #655d5d;
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .EntrySummary--magazine, .EntrySummary--cards {
+    -webkit-box-orient: vertical;
+    -webkit-i_line-clamp: 3;
+    display: -webkit-box;
+    overflow: hidden;
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 0;
+    margin-top: .25rem;
+    word-break: break-word;
+  }
+  .i_line{
+    background-color: rgb(138, 136, 136);
+    width: 52%;
+    height: 1px;
+    margin-left: 19%;
+  }
+  .btn .btn-primary{
+    align-content: center;
+  }
+  .i_body{
+    font-family: Poppins;
+    margin: 0;
+    background-color: #bad7db;
+    margin:0% 10% 0% 10%;
+    
+  }
+  
+ 
+ 
+  .bg-body-tertiary{
+    color:rgb(164, 158, 158);
+  }
+
+  @media screen and (max-width:768px) {
+    .data{
+      display: flex;
+      flex-wrap: nowrap;
+      
+      flex-direction: column;
+      
+    }
+}
+.text-ceenter{
+    color: greenyellow;
+    text-decoration:solid;
+    font-size: 160px;
+    font-family: 'Dancing Script';
+    position: relative;
+    top:20px;
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 768px) {
+    .text-ceenter {
+      font-size: 120px;
+    }
+  }
+  @media screen and (max-width:480px) {
+    .text-ceenter {
+      font-size: 80px;
+    }
+  }
