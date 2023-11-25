@@ -1,6 +1,7 @@
 import React from 'react';
 import './Lesson.css'
 import Navbar from '../Navbar/Navbar';
+import { Link } from 'react-router-dom';
 
 const Lessons = () => {
   return (
@@ -22,7 +23,7 @@ const Lessons = () => {
                     </a>
                     <h3>Helios - The Sun</h3>
                     <p>Helios - The Sun God of Greek Mythology - Greek Mythology in Comics - See U in History</p>
-                    <a href="http://localhost:3000/" className="btn btn-primary practice-quiz">Practice</a>
+                    <Link  to="/Home/QuizTopics" ><a href="/#" className="btn btn-primary practice-quiz">Practice</a></Link>
                 </div>
             </div>
             <div className="col-md-4">
@@ -36,7 +37,7 @@ const Lessons = () => {
                     </a>
                     <h3>Black Holes</h3>
                     <p>At the center of our galaxy, a supermassive black hole churns....</p>
-                    <a href="http://localhost:3000/" className="btn btn-primary practice-quiz">Practice</a>
+                    <Link  to="/Home/QuizTopics" ><a href="/#" className="btn btn-primary practice-quiz">Practice</a></Link>
                 </div>
             </div>
             <div className="col-md-4">
@@ -50,7 +51,7 @@ const Lessons = () => {
                     </a>
                     <h3>What is a Comet?</h3>
                     <p>This video was created in association with Fireballs Aotearoa, a meteor....</p>
-                    <a href="http://localhost:3000/" className="btn btn-primary practice-quiz">Practice</a>
+                    <Link  to="/Home/QuizTopics" ><a href="/#" className="btn btn-primary practice-quiz">Practice</a></Link>
                 </div>
             </div>
          
@@ -70,7 +71,7 @@ const Lessons = () => {
                     </a>
                     <h3>Milky Way Galaxy</h3>
                     <p>Are you looking for a video on Milky Way?  You are in the right place....</p>
-                    <a href="http://localhost:3000/" className="btn btn-primary practice-quiz">Practice</a>
+                    <Link  to="/Home/QuizTopics" ><a href="/#" className="btn btn-primary practice-quiz">Practice</a></Link>
                 </div>
             </div>
             <div className="col-md-4">
@@ -84,7 +85,7 @@ const Lessons = () => {
                     </a>
                     <h3>Jupiter A Failed Star</h3>
                     <p>Is Jupiter A Failed Star? And What Would Happen If It Really Became One? .....</p>
-                    <a href="http://localhost:3000/" className="btn btn-primary practice-quiz">Practice</a>
+                    <Link  to="/Home/QuizTopics" ><a href="/#" className="btn btn-primary practice-quiz">Practice</a></Link>
                 </div>
             </div>
             <div className="col-md-4">
@@ -98,7 +99,7 @@ const Lessons = () => {
                     </a>
                     <h3>The Life Cycle of Stars</h3>
                     <p>Explains how we believe stars are born, live and die and the different ends to different...</p>
-                    <a href="http://localhost:3000/" className="btn btn-primary practice-quiz">Practice</a>
+                    <Link  to="/Home/QuizTopics" ><a href="/#" className="btn btn-primary practice-quiz">Practice</a></Link>
                 </div>
             </div>
         </div>
@@ -115,7 +116,7 @@ const Lessons = () => {
                     </a>
                     <h3>Gravity a Space-Time curvature</h3>
                     <p>Einstein’s relativity, and how it relates to gravity, explained in less than 10 minutes..... </p>
-                    <a href="http://localhost:3000/" className="btn btn-primary practice-quiz">Practice</a>
+                    <Link  to="/Home/QuizTopics" ><a href="/#" className="btn btn-primary practice-quiz">Practice</a></Link>
                 </div>
             </div>
             <div className="col-md-4">
@@ -129,7 +130,7 @@ const Lessons = () => {
                     </a>
                     <h3>Solar Eclipse and Lunar Eclipse</h3>
                     <p>A Solar Eclipse or a Lunar Eclipse happen when the Sun, Earth, Moon, and the lunar.....</p>
-                    <a href="http://localhost:3000/" className="btn btn-primary practice-quiz">Practice</a>
+                    <Link  to="/Home/QuizTopics" ><a href="/#" className="btn btn-primary practice-quiz">Practice</a></Link>
                 </div>
             </div>
             <div className="col-md-4">
@@ -143,7 +144,7 @@ const Lessons = () => {
                     </a>
                     <h3>Nuclear Fusion Powers Stars</h3>
                     <p>The energy produced by nuclear fusion powers stars like our own Sun. This clip examines..... </p>
-                    <a href="http://localhost:3000/" className="btn btn-primary practice-quiz">Practice</a>
+                    <Link  to="/Home/QuizTopics" ><a href="/#" className="btn btn-primary practice-quiz">Practice</a></Link>
                 </div>
             </div>
 

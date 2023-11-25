@@ -133,6 +133,7 @@ body{
   .drop{
         text-decoration: none;
        color: whitesmoke;
+
   }
   @media screen and (min-width: 1200px){
     .dropdown:hover .dropdown-menu{
@@ -142,4 +143,11 @@ body{
   }
   .bg-yellow{
     width:100%;
+    border-radius: 5%;
+  }
+  .nav-link{
+    border-radius: 50%;
+  }
+  .dropdown-item{
+    border-radius: 15%;
   }
