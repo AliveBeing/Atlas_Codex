@@ -6,11 +6,10 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import logo from './Logo_1.png'; 
 import statue from './Statue_1.png' ;
 import icon from './New-icon.gif' ;
-import './Home.css'; // Import your custom CSS file
+import './Navbar.css'; // Import your custom CSS file
 import { Link } from 'react-router-dom';
 import { useAuth0 } from '@auth0/auth0-react';
-
-const Home = () => {
+const Navbar=()=>{
   const {loginWithRedirect, isAuthenticated , logout} = useAuth0();
  
   return (
@@ -18,10 +17,10 @@ const Home = () => {
        <div className="main"></div>
        <nav className="navbar navbar-expand-lg navbar-dark bg-transparent why">
         <div className="container">
-          <a className="navbar-brand" href="/#"><Link to="/">
+          <Link to="/" className="navbar-brand">
             <img src={logo} alt="logo" className="logo" style={{ height: '90px', width: '100px' }} />
-            <img src={statue} alt="statue" className="statue" style={{ height: '80px', width: '80px' }} /></Link>
-          </a>
+            <img src={statue} alt="statue" className="statue" style={{ height: '80px', width: '80px' }} />
+          </Link>
           <button className="navbar-toggler shadow-none border" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
             aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
@@ -54,10 +53,10 @@ const Home = () => {
                     More
                   </a>
                   <ul className="dropdown-menu dropdown-menu-dark bg-yellow">
-                    <li><a className="dropdown-item" href="/#"><button className="nav-link" data-bs-dismiss="offcanvas"><Link to="/Home/History" className='drop'>History</Link></button></a></li>
-                    <li><a className="dropdown-item" href="/#"><button className="nav-link" data-bs-dismiss="offcanvas"><Link to="/Home/Lessons" className='drop'>Lessons</Link></button></a></li>
-                    <li><a className="dropdown-item" href="/#"><button className="nav-link" data-bs-dismiss="offcanvas"><Link to="/Home/QuizTopics" className='drop'>Quiz</Link></button></a></li>
-                    <li><a className="dropdown-item " href="/#"><button className="nav-link" data-bs-dismiss="offcanvas"><Link to="/Home/LatestNews" className='drop'> Latest News & <br />Updates<img src={icon} alt="new-icon" className="new-icon" /></Link></button></a></li>
+                    <li><button className="nav-link dropdown-item " data-bs-dismiss="offcanvas"><Link to="/Home/History" className='drop'><a className="dropdown-item" href="/#">History</a></Link></button></li>
+                    <li><button className="nav-link dropdown-item" data-bs-dismiss="offcanvas"><Link to="/Home/Lessons" className='drop'><a className="dropdown-item" href="/#">Lessons</a></Link></button></li>
+                    <li><button className="nav-link dropdown-item" data-bs-dismiss="offcanvas"><Link to="/Home/QuizTopics" className='drop'><a className="dropdown-item" href="/#">Quiz</a></Link></button></li>
+                    <li><button className="nav-link dropdown-item" data-bs-dismiss="offcanvas"><Link to="/Home/LatestNews" className='drop'><a className="dropdown-item" href="/#">Latest News & <br />Updates<img src={icon} alt="new-icon" className="new-icon" /></a></Link></button></li>
                   </ul>
                 </li>
               </ul>
@@ -77,14 +76,9 @@ const Home = () => {
           </div>
         </div>
       </nav>
-      <main>
-        <section className="d-flex flex-column justify-content-center align-items-center text-white fs-1">
-          <h1 className="glow">ATLAS CODEX</h1>
-        </section>
-      </main>
-      
-    </>
-  );
-};
+      <hr style={{ borderTop: "2px solid lightgrey" }}></hr>
+      </>
+    );
+}
 
-export default Home;
+export default Navbar;

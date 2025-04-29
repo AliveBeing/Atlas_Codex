@@ -1,0 +1,16 @@
+.Nav_division{
+    background-color: antiquewhite;
+    border: 3px solid #eaecec;
+
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* optional spacing between images */
+}
+
+.logo, .statue {
+    display: inline-block;
+    vertical-align: middle;
+}

@@ -6,10 +6,11 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import logo from './Logo_1.png'; 
 import statue from './Statue_1.png' ;
 import icon from './New-icon.gif' ;
-import './Navbar.css'; // Import your custom CSS file
+import './Home.css'; // Import your custom CSS file
 import { Link } from 'react-router-dom';
 import { useAuth0 } from '@auth0/auth0-react';
-const Navbar=()=>{
+
+const Home = () => {
   const {loginWithRedirect, isAuthenticated , logout} = useAuth0();
  
   return (
@@ -28,24 +29,24 @@ const Navbar=()=>{
           <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" >
             <div className="offcanvas-header text-white border-bottom">
               <h5 className="offcanvas-title" id="offcanvasNavbarLabel">Atlas Codex</h5>
-              <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <button type="button" className="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div className="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
               <ul className="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
                 <li className="nav-item mx-2">
                   <button className="nav-link" data-bs-dismiss="offcanvas" >
-                    <a className="nav-link" aria-current="page" href="/#"><Link className="nav-link" to="/">Home</Link></a>
+                    <Link className="nav-link" aria-current="page" to="/">Home</Link>
                   </button>
                 </li>
                 <li className="nav-item mx-2">
                 <button className="nav-link" data-bs-dismiss="offcanvas" >
-                <a className="nav-link" href="/#" ><Link className="nav-link" to="/Home/AboutUs">About</Link></a>
+                <Link className="nav-link" to="/Home/AboutUs">About</Link>
                 </button>
                   
                 </li>
-                <li class="nav-item mx-2">
+                <li className="nav-item mx-2">
                 <button className="nav-link" data-bs-dismiss="offcanvas" >
-                <a className="nav-link" href="/#" ><Link className="nav-link" to="/Home/Mission" >Missions</Link></a>
+                <Link className="nav-link" to="/Home/Mission" >Missions</Link>
                 </button>
                 </li>
                 <li className="nav-item dropdown mx-2">
@@ -53,10 +54,10 @@ const Navbar=()=>{
                     More
                   </a>
                   <ul className="dropdown-menu dropdown-menu-dark bg-yellow">
-                    <li><button className="nav-link dropdown-item " data-bs-dismiss="offcanvas"><Link to="/Home/History" className='drop'><a className="dropdown-item" href="/#">History</a></Link></button></li>
-                    <li><button className="nav-link dropdown-item" data-bs-dismiss="offcanvas"><Link to="/Home/Lessons" className='drop'><a className="dropdown-item" href="/#">Lessons</a></Link></button></li>
-                    <li><button className="nav-link dropdown-item" data-bs-dismiss="offcanvas"><Link to="/Home/QuizTopics" className='drop'><a className="dropdown-item" href="/#">Quiz</a></Link></button></li>
-                    <li><button className="nav-link dropdown-item" data-bs-dismiss="offcanvas"><Link to="/Home/LatestNews" className='drop'><a className="dropdown-item" href="/#">Latest News & <br />Updates<img src={icon} alt="new-icon" className="new-icon" /></a></Link></button></li>
+                    <li><button className="dropdown-item" data-bs-dismiss="offcanvas"><Link to="/Home/History" className='drop'>History</Link></button></li>
+                    <li><button className="dropdown-item" data-bs-dismiss="offcanvas"><Link to="/Home/Lessons" className='drop'>Lessons</Link></button></li>
+                    <li><button className="dropdown-item" data-bs-dismiss="offcanvas"><Link to="/Home/QuizTopics" className='drop'>Quiz</Link></button></li>
+                    <li><button className="dropdown-item" data-bs-dismiss="offcanvas"><Link to="/Home/LatestNews" className='drop'> Latest News & <br />Updates<img src={icon} alt="new-icon" className="new-icon" /></Link></button></li>
                   </ul>
                 </li>
               </ul>
@@ -76,9 +77,14 @@ const Navbar=()=>{
           </div>
         </div>
       </nav>
-      <hr style={{ borderTop: "2px solid lightgrey" }}></hr>
-      </>
-    );
-}
+      <main>
+        <section className="d-flex flex-column justify-content-center align-items-center text-white fs-1">
+          <h1 className="glow">ATLAS CODEX</h1>
+        </section>
+      </main>
+      
+    </>
+  );
+};
 
-export default Navbar;
+export default Home;
